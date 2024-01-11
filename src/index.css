@@ -1,0 +1,425 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+}
+body{
+  /* background-color: black; */
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+
+
+
+
+
+/* HERO SECTION */
+.heroContainer{
+  position: relative;
+  /* max-width: 1280px; */
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection{
+  background-color: black;
+  background-image: url("./assets/herolines.png");
+  background-position: center;
+  height: 100%;
+  /* display: flex; */
+}
+.heroText{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 200px;
+  line-height: 166px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+#apptext{
+  z-index: 5;
+}
+.heroText img{
+  position: absolute;
+  z-index: 3;
+}
+#herocube{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+#herostairs{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+#herostairscube{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+#heropillar{
+  position: absolute;
+  right: 10%;
+  bottom : 0  ;
+}
+@media (max-width:800px){
+  .heroText{
+    font-size: 100px;
+    line-height: 83px;
+  }
+  #herophone, #herocube, #heropillar, #herostairscube, #herostairs{
+    scale: 0.5;
+  }
+  #herocube{
+    top: 20%;
+  }
+  #herostairs{
+    right: 0%;
+  }
+  #herostairscube{
+    left: 0;
+  }
+  #heropillar{
+    right: 0;
+  }
+  .heroContainer{
+    height: 80vh;
+  }
+}
+
+
+
+
+
+/* NAVBAR */
+.navItem{
+  color: white;
+  font-weight: 600;
+}
+.navbarContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  max-width: 1280px;
+}
+.navItems{
+  display: flex;
+  gap: 20px;
+}
+/* .navIcon{
+  margin: 0 40px;
+} */
+@media (max-width:800px) {
+  .navItems{
+    display: none;
+  }
+  .navbarContainer{
+    justify-content: space-around;
+    
+  }
+}
+
+
+
+
+
+/* FOOTER */
+.footerContainer{
+  position: absolute;
+  bottom: 20px;
+  /* max-width: 1280px; */
+  width: 100%;
+  /* margin: 0 auto; */
+  /* align-self: center; */
+  height: 60px;
+}
+.footerWrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+}
+.footerButtons{
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 0;
+}
+.footerButton{
+  display: flex;
+  width: 170px;
+  height: 50px;
+  /* padding: 25px; */
+  justify-content: center;
+  gap: 12px;
+  font-weight: 600;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+.footerwhiteButton{
+  display: flex;
+  width: 170px;
+  height: 50px;
+  /* padding: 25px; */
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.footerLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+}
+.footerArrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:800px){
+  .footerWrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerButtons{
+    position: static;
+  }
+  .footerLinks{
+    position: static;
+    /* margin: 15px 0; */
+    margin-top: 15px;
+  }
+  .footerArrow{
+    display: none;
+  }
+}
+
+
+
+
+
+/* PAYMENT SECTION */
+.paymentContainer{
+  height: 100vh;
+  background-image: url("./assets/paymentbackground.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* background-size: 200%; */
+}
+.paymentText{
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  max-width: 27%;
+}
+.paymentText h1{
+  font-size: 40px;
+  font-weight: 800;
+  color: #00D54B;
+}
+.paymentText p{
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+@media (max-width:800px){
+  .paymentContainer{
+    height: 80vh;
+    background-size: 200%;
+    background-position: bottom;
+    background-position-x: -160px;
+  }
+  .paymentText{
+    top: 15%;
+    max-width: 60%;
+  }
+}
+
+
+
+
+
+/* BANKING SECTION */
+.bankingContainer{
+  height: 100vh;
+  background-image: url("./assets/bankingbackground.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.bankingText{
+  position: absolute;
+  left: 16%;
+  top: 38%;
+  max-width: 25%;
+}
+.bankingText h1{
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+.bankingText p{
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+@media (max-width:800px){
+  .bankingContainer{
+    height: 80vh;
+    background-size: 200%;
+    background-position: bottom;
+    background-position-x: -160px;
+    background-color: #00D54B;
+  }
+  .bankingText{
+    top: 15%;
+    max-width: 60%;
+  }
+}
+
+
+
+
+
+/* CASH CARD SECTION */
+.cashcardContainer{
+  height: 100vh;
+  background-image: url("./assets/cashcarbackground.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cashcardText{
+  position: absolute;
+  left: 14%;
+  top: 28%;
+  max-width: 25%;
+}
+.cashcardText h1{
+  font-size: 40px;
+  font-weight: 800;
+  color: #00D54B;
+  line-height: 38px;
+  padding-bottom: 10px;
+}
+.cashcardText p{
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: white;
+}
+@media (max-width:800px){
+  .cashcardContainer{
+    height: 80vh;
+    background-size: 200%;
+    background-position: bottom;
+    background-position-x: -160px;
+    background-color: black;
+  }
+  #cashcardphone{
+    scale: 50%;
+    translate: 0 150px;
+  }
+  .cashcardText{
+    position: absolute;
+    left: 14%;
+    top: 18%;
+    max-width: 60%;
+  }
+}
+
+
+
+
+
+/* INVESTING SECTION */
+.investingContainer{
+  height: 100vh;
+  background-image: url("./assets/investingbackground.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.investingContainer h1{
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+.investingBox{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.investingImages{
+  display: flex;
+  gap: 80px;
+}
+.investingTextBox{
+  width: 350px;
+  margin: 0 5px;
+}
+.investingTextBox h2{
+  font-size: 22px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.investingBox p{
+  font-size: 16px;
+  line-height: 22px;
+}
+.ibls, .ibrs{
+  display: flex;
+  gap: 40px;
+}
+@media (max-width:800px){
+  .investingContainer{
+    height: auto;
+    background-image: none;
+    background-color: #00D54B;
+    padding: 30px 0;
+  }
+  .investingBox{
+    flex-direction: column;
+  }
+  .investingTextBox{
+    width: auto;
+    max-width: 300px;
+  }
+}
